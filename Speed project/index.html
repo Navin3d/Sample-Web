@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Speed</title>
+		<link rel="shortcut icon" href="resources/img/GMC.jpeg" type="image/x-icon">
+		<link rel="stylesheet" href="resources/css/style.css" type="text/css">
+	</head>
+	<body>
+		<header>
+			<img src="resources/img/round.png" alt="GMC">
+			<h1>Government of India</h1>
+		</header>
+		<section class="speed-box">
+			<div>
+				<h2>Points-Calculator</h2>
+
+				<form onsubmit="calc()">
+					<label for="lno"><b>Enter the Lisence Number : </b></label>
+					<input type="text" placeholder=" TN ** N ****" value="" name="lno" required><br>
+
+					<label for=speed><b>Enter the speed : </b></label>
+					<input type="number" placeholder="Speed in km/hr" value="" name="speed" id="speed" required><br>
+
+					<label for="way"><b>Select the Road : </b></label>
+					<select name="way" id="way" required>
+						<option value="city" selected>City</option>
+						<option value="town">Town</option>
+						<option value="highway">Highway</option>
+					</select>
+
+					<p id="out"></p>
+
+					<button type="submit" class="button">Calculate</button>
+			    </form>
+
+			</div>
+		</section>
+		<footer></footer>
+		<script src="resources/js/speed.js"></script>
+	</body>
+</html>
